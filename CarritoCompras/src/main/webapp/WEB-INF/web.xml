@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>smart.capacitacion.controller.UsuarioServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>CarritoComprasServlet</servlet-name>
+  	<display-name>CarritoComprasServlet</display-name>
+  	<description></description>
+  	<servlet-class>smart.capacitacion.controller.CarritoComprasServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>UsuarioServlet</servlet-name>
   	<url-pattern>/UsuarioServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CarritoComprasServlet</servlet-name>
+  	<url-pattern>/CarritoComprasServlet</url-pattern>
   </servlet-mapping>
 </web-app>

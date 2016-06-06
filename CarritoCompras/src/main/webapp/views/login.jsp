@@ -78,14 +78,18 @@
 	
 	<form name="loginForm" action="../UsuarioServlet" method="post">
 		<%=request.getSession().getAttribute("error")%>
+		<input type ="hidden" name= "opcion" id="opcion" value="1">
 		<div class = "tableRow">
 			<p>
 				Usuario: <input type ="text" name= "usuario" id="usuario" value=""> <br>
 				Password:<input type = "password" name = "password" id="password"value= ""> <br>
 				<input type ="submit" name = "ingresarUsuario" value="Ingresar">
-				<input type ="submit" name = "ingresarNuevoUsuario" value ="Nuevo">
 			</p>
-			
+			</div>
 	</form>
+	<form name="loginForm" action="../UsuarioServlet" method="post">
+		<a href="crearUsuario.jsp">Registrar</a>
+	</form>
+	
 </body>
 </html>

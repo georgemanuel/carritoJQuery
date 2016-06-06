@@ -14,9 +14,9 @@ public class CarritoComprasServiceImpl implements CarritoComprasService {
 	UsuarioDAO usuarioDAO = new UsuarioDAO();
 	
 	@Override
-	public boolean crearCarrito(CarritoCompras carritoCompras) {
+	public CarritoCompras crearCarritoByUsuario(Usuario usuario) {
 		
-		return carritoComprasDAO.crearCarrito(carritoCompras);
+		return carritoComprasDAO.crearCarritoByUsuario(usuario);
 	}
 
 	@Override

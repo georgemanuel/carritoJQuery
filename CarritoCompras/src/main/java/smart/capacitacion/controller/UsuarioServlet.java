@@ -5,8 +5,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import smart.capacitacion.dao.CarritoComprasDAO;
 import smart.capacitacion.modelo.CarritoCompras;
 import smart.capacitacion.modelo.Usuario;
 import smart.capacitacion.service.CarritoComprasService;
